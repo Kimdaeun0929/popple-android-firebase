@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- 채팅 화면 리사이클러뷰 아이템 -->
+
+    <!-- 상대방의 메시지 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/left_chat_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/my_message_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/left_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/left_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- 내 메시지 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/right_chat_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/my_message_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/right_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/right_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>

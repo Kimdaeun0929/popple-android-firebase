@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="마이페이지"
+        android:textSize="30dp" />
+
+    <!-- 로그인 시 닉네임으로 전환 -->
+    <TextView
+        android:id="@+id/login1"
+        android:layout_below="@+id/TextResult"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="20dp"
+        android:text="비회원님, 안녕하세요"
+        android:onClick="onLoginClick"/>
+
+    <!-- 클릭시 로그인 화면으로 전환 -->
+    <TextView
+        android:id="@+id/login2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/login1"
+        android:layout_marginLeft="13dp"
+        android:text="로그인 하려면 클릭하세요"
+        android:textColor="@color/purple"
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+
+    <!-- 위시리스트 -->
+
+
+
+    <LinearLayout
+        android:id="@+id/wishlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login2"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/wish"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wish2"
+                android:layout_marginLeft="13dp"
+                android:layout_below="@+id/login1" />
+
+            <TextView
+                android:id="@+id/wish1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login1"
+                android:text="나의 위시리스트"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/go"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/login1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 위시리스트 밑에 밑줄 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/wishlist"
+        android:background="@android:color/darker_gray"/>
+
+
+    <!-- 회원 이름 밑에 밑줄 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/login2"
+        android:background="@android:color/black"/>
+
+    <!-- 상단 마이페이지 밑에 밑줄 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/TextResult"
+        android:background="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_above="@+id/LinearLayoutBottom"
+        android:background="@android:color/black"/>
+
+
+    <!-- 하단 사진들 -->
+    <LinearLayout
+        android:id="@+id/LinearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/cardview_light_background"
+        android:layout_alignParentBottom="true">
+
+        <!-- 하단 사진 1 -->
+        <ImageView
+            android:id="@+id/imageViewBottom1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <!-- 하단 사진 2 -->
+        <ImageView
+            android:id="@+id/imageViewBottom2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/map1" />
+
+        <!-- 하단 사진 3 -->
+        <ImageView
+            android:id="@+id/imageViewBottom3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home3" />
+
+        <!-- 하단 사진 4 -->
+        <ImageView
+            android:id="@+id/imageViewBottom4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chat1" />
+
+        <!-- 하단 사진 5 -->
+        <ImageView
+            android:id="@+id/imageViewBottom5"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user3" />
+
+    </LinearLayout>
+</RelativeLayout>

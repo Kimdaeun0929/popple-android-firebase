@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abcd"
+    tools:context=".store1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextResult">
+
+        <TextView
+            android:id="@+id/TextResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="수키도키 팝업스토어"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/TextResult1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextResult"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="인스타툰으로 각광받고 있는 아이코닉하고 귀여운 쥐 캐릭터 ‘수키도키 짱쥐순’의 단독 팝업스토어가 오픈했습니다.‘쥐구멍가게’를 콘셉트로 키링부터 인형, 가방, 의류 등 다채로운 굿즈와 함께 오직 이번 팝업스토어에서만 만나볼 수 있는 한정 제품들도 준비했는데요. 현장 구매 이벤트도 진행한다고 하니 팝업의 성지 더현대 서울에서 쥐순이를 만나보세요!"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <!-- 첫 번째 이미지뷰 -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextResult"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/aaa" />
+
+        <!-- 첫 번째 텍스트뷰 -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="운영 기간 : 2024.02.01(목) ~ 2024.02.14 (수)\n운영 시간 : 행사종료\n기획/운영더현대 서울\n콘텐츠 : 3만 원 이상 구매 고객 대상 랜덤 포토 카드 증정\n            10만 원 이상 구매 고객 대상 쥐순이 장바구니 증정\n키워드 : 수키도키,쥐구멍가게,쥐순이,더현대팝업,더현대, 아기쥐새끼,구멍가게,이모티콘,캐릭터,아이코닉\n자료 출처 : 수키도키 공식 인스타그램"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:padding="0dp"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
