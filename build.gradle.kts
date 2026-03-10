@@ -1,10 +1,58 @@
-buildscript {
-    dependencies {
-        classpath("com.google.gms:google-services:4.4.1")
+plugins {
+    id("com.android.application")
+    id("com.google.gms.google-services") //firebase plugin 추가
+}
+
+android {
+    namespace = "com.example.capstone"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.example.capstone"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id("com.android.application") version "8.2.0" apply false
-    id("com.google.gms.google-services") version "4.4.1" apply false
+
+dependencies {
+
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    implementation("com.google.android.gms:play-services-location:21.2.0")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+
+    //firebase sdk 추가
+    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-database:21.0.0")
+    //firebase 회원, 로그인 위한 인증 추가
+    implementation("com.google.firebase:firebase-auth")
+
+
+    // firebase - storage 추가
+    implementation("com.google.firebase:firebase-storage")
+    implementation ("com.firebaseui:firebase-ui-storage:7.2.0")
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
+
 }
