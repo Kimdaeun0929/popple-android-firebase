@@ -37,13 +37,13 @@ https://tv.kakao.com/v/447395076
 ![앱 소개](images/cover.png)
 
 **로그인 · 홈 · 지도 · 팝업정보 · 위시리스트**
-![앱 화면](images/login.jpeg)
+![앱 화면](images/login.jpg)
 
 **위시리스트 DB 저장**
-![위시리스트 DB](images/wishlist_db.png)
+![위시리스트 DB](images/wishlist_db.jpg)
 
 **채팅 DB 저장**
-![채팅 DB](images/chat_db.png)
+![채팅 DB](images/chat_db.jpg)
 
 <br>
 
